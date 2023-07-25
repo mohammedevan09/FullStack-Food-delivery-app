@@ -2,24 +2,11 @@
   "functions": [
     {
       "source": "functions",
-      "codebase": "default",
-      "hosting": {
-        "public": "dist",
-        "ignore": [
-          "node_modules",
-          ".git",
-          "firebase-debug.log",
-          "firebase-debug.*.log"
-        ]
-      }
+      "codebase": "default"
     }
   ],
   "hosting": {
-    "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
+    "functions": ".",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
 }

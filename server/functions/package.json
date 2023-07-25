@@ -5,9 +5,9 @@
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
     "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
+    "deploy": "firebase deploy --only functions:api",
     "logs": "firebase functions:log",
-    "build": "tsc"
+    "build": "mkdir -p build && cp -r functions/* build/"
   },
   "engines": {
     "node": "18"

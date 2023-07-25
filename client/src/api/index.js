@@ -1,7 +1,6 @@
 import axios from 'axios'
 
-export const baseURL =
-  'http://127.0.0.1:5001/food-delivery-app-f7901/us-central1/app'
+export const baseURL = process.env.VITE_BASE_URL
 
 export const validateUserJWTToken = async (token) => {
   try {

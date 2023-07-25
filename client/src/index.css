@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@500;600;800&display=swap');
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fecaca;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff9191;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+
+.inputCss {
+  @apply mt-4 px-4 py-2 w-[100%] outline-none text-black font-semibold bg-white;
+  box-shadow: 0px 5px 10px rgb(194, 58, 58);
+}
+
+.isActiveStyles {
+  @apply text-xl text-black font-semibold hover:text-red-400 px-4 py-1 transition-all ease-in-out bg-white rounded-md;
+  /* box-shadow: 2px 2px 5px red, inset 2px 2px 5px black; */
+}
+
+.isNotActiveStyle {
+  @apply text-xl text-zinc-300 font-semibold hover:text-red-200 px-4 py-1 transition-all ease-in-out;
+}
+
+.links {
+  @apply hover:text-red-500 text-xl text-black font-semibold;
+}
+
+.MuiDataGrid-cellContent,
+.MuiDataGrid-columnHeaders.MuiDataGrid-withBorderColor.css-1iyq7zh-MuiDataGrid-columnHeaders,
+.MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedStart.MuiInputBase-adornedEnd.css-v4u5dn-MuiInputBase-root-MuiInput-root,
+button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeSmall.css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root,
+.MuiTablePagination-root.css-rtrcn9-MuiTablePagination-root,
+.MuiDataGrid-cell--withRenderer.MuiDataGrid-cell.MuiDataGrid-cell--textLeft.MuiDataGrid-withBorderColor {
+  color: white;
+}
+
+.MuiDataGrid-cellCheckbox.MuiDataGrid-cell--withRenderer.MuiDataGrid-cell.MuiDataGrid-cell--textCenter.MuiDataGrid-withBorderColor {
+  background: #111a4e;
+  color: white;
+}
+
+path {
+  @apply text-red-400;
+}
+
+.MuiDataGrid-root.MuiDataGrid-root--densityStandard.MuiDataGrid-withBorderColor.css-1lymaxv-MuiDataGrid-root {
+  width: 50vw;
+}
+
+.MuiDataGrid-cell--withRenderer.MuiDataGrid-cell.MuiDataGrid-cell--textCenter.MuiDataGrid-withBorderColor {
+  position: relative;
+  left: 4px;
+}
+
+.MuiDataGrid-root.MuiDataGrid-root--densityStandard.MuiDataGrid-withBorderColor.css-1lymaxv-MuiDataGrid-root {
+  border: none;
+}
+
+span.MuiBadge-badge.MuiBadge-standard.MuiBadge-anchorOriginTopRight.MuiBadge-anchorOriginTopRightRectangular.MuiBadge-overlapRectangular.MuiBadge-colorSecondary.css-jcn4dz-MuiBadge-badge {
+  background: #ff6767;
+}
+
+.blur-one {
+  position: absolute;
+  left: 10px;
+  top: 300px;
+  width: 180px;
+  height: 180px;
+  background-color: rgb(106 84 193);
+  filter: blur(130px);
+}
+
+.blur-two {
+  position: absolute;
+  right: 139px;
+  top: 0px;
+  width: 180px;
+  height: 180px;
+  background-color: rgb(106 84 193);
+  filter: blur(130px);
+}
+
+.blur-three {
+  position: absolute;
+  right: 320px;
+  top: 490px;
+  width: 180px;
+  height: 180px;
+  background-color: rgb(106 84 193);
+  filter: blur(130px);
+}
+
+.fastest-delivery {
+  box-shadow: 5px 5px 5px #ff65a5, inset 2px 2px 5px #ff65a5;
+  padding: 5px 21px;
+}
+
+.cart-css {
+  @apply bg-black hover:drop-shadow-lg backdrop-blur-md rounded-xl flex items-center justify-center relative px-4 py-2 w-full md:w-340 gap-3;
+  backdrop-filter: blur(176px);
+  box-shadow: 5px 5px 27px rgb(12 0 197 / 61%);
+}
+
+.line {
+  width: 1px;
+  height: 96px;
+  background: white;
+}
+
+.h-line {
+  height: 1px;
+  width: 54px;
+  position: relative;
+  background-color: white;
+}
+
+.MuiDataGrid-root.MuiDataGrid-root--densityStandard.MuiDataGrid-withBorderColor.css-1lymaxv-MuiDataGrid-root {
+  width: 88%;
+}
+
+li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 8px;
+}
+
+@tailwind utilities;

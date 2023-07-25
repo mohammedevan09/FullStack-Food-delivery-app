@@ -1,0 +1,40 @@
+export const buttonClick = {
+  whileTap: { scale: 0.95 },
+}
+
+export const navButtonClick = {
+  whileTap: { scale: 0.55, transition: 'all 0.5 ease-in-out' },
+}
+
+export const fadeInOut = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  exit: { opacity: 0 },
+}
+
+export const dropdown = {
+  initial: { opacity: 0, y: 30 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: 30 },
+}
+
+export const staggerFadeInOut = (i) => {
+  return {
+    initial: { opacity: 0, y: 50 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: 50 },
+    transition: { duration: 0.3, delay: i * 0.15 },
+    key: { i },
+  }
+}
+
+export const slideTop = {
+  initial: { opacity: 0, y: 30 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: 30 },
+}
+export const slideIn = {
+  initial: { opacity: 0, x: 30 },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: 30 },
+}

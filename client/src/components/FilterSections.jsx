@@ -18,7 +18,7 @@ const FilterSections = () => {
           <div className="w-40 h-1 rounded-md bg-red-400"></div>
         </div>
       </div>
-      <div className="w-full overflow-x-scroll xl:overflow-hidden pt-6 flex items-center justify-center gap-6 py-8">
+      <div className="w-full overflow-x-scroll xl:overflow-hidden pt-6 flex items-center justify-left gap-6 py-8">
         {products &&
           statuses.map((data, i) => (
             <FilterCard

@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <>
       <footer className="grid items-center justify-center bg-gray-900 w-full text-white py-1">
-        <div className="sm:flex grid justify-between items-center w-screen px-10">
+        <div className="sm:flex grid justify-center sm:justify-between items-center w-screen px-10">
           <div className="my-1 mx-auto h-[240px]">
             <h3 className="font-semibold text-xl sm:py-5 py-2">Social Media</h3>
             <ul>

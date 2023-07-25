@@ -7,23 +7,30 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addNewItemToCart, getAllCartItems } from '../api'
 import { error, info, success } from './AlertMessage'
 import { setCart } from '../context/reducers/cartItemsReducer'
+import { useNavigate } from 'react-router-dom'
 
 const SliderCart = ({ data, index }) => {
   const user = useSelector((state) => state.user)
   const dispatch = useDispatch()
+  const navigate = useNavigate()
 
   const sendToCart = () => {
-    info('Adding Item to cart!')
-    addNewItemToCart(user?.user_id, data)
-      .then((res) => {
-        getAllCartItems(user?.user_id).then((items) => {
-          success('Added to the cart!')
-          dispatch(setCart(items))
+    if (user) {
+      info('Adding Item to cart!')
+      addNewItemToCart(user?.user_id, data)
+        .then((res) => {
+          getAllCartItems(user?.user_id).then((items) => {
+            success('Added to the cart!')
+            dispatch(setCart(items))
+          })
         })
-      })
-      .catch((err) => {
-        error('Cannot add to the cart!')
-      })
+        .catch((err) => {
+          error('Cannot add to the cart!')
+        })
+    } else {
+      error('You need to login first!')
+      navigate('/login')
+    }
   }
 
   return (
